@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-item *ngFor="let item of Items">
+      <p>{{item.id | json}}</p>
+      <p>{{item.name | json}}</p>
+
+    </ion-item>
+  </div>
+</ion-content>
